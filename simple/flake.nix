@@ -9,7 +9,7 @@
     let
       mkOutputs = system:
         let
-          pkgs = import nixpkgs { inherit system; }
+          pkgs = import nixpkgs { inherit system; };
         in
           {
             devShells.default = with pkgs; mkShell {
